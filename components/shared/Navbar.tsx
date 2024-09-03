@@ -1,5 +1,12 @@
 import Link from "next/link";
 import { Button } from "../ui/button";
+import {
+	Dialog,
+	DialogContent,
+	DialogTitle,
+	DialogTrigger,
+} from "../ui/dialog";
+import NewsletterForm from "./NewsletterForm";
 
 const Navbar = () => {
 	return (
@@ -9,7 +16,16 @@ const Navbar = () => {
 			</Link>
 			<div className="flex gap-1">
 				<Button variant="ghost">Login</Button>
-				<Button>Subscribe</Button>
+				<Dialog>
+					<DialogTrigger asChild>
+						<Button>Subscribe</Button>
+					</DialogTrigger>
+					<DialogContent>
+						<DialogTitle>Subscribe to DevSnack</DialogTitle>
+
+						<NewsletterForm />
+					</DialogContent>
+				</Dialog>
 			</div>
 		</nav>
 	);
