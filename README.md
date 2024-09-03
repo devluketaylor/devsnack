@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DevSnack 🍫
 
-## Getting Started
+**DevSnack** is an open-source newsletter website designed for developers that want to keep up to date on the latest and greatest technology and information. Easily digestible tips, tool and trends sent to your inbox.
 
-First, run the development server:
+![DevSnack Banner]("https://i.imgur.com/7yuWy0v.png")
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Customizable Newsletter:** Choose topics that interest you the most.
+- **Subscription Management:** Easy subscribe/unsubscribe options.
+- **Responsive Design:** Optimized for both mobile and desktop.
+- **Admin Dashboard:** Manage subscribers, send newsletters.
+- **Open Source:** Contributions are welcome!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Frontend:** React.js, Tailwind CSS, Shadcn
+- **Backend:** Node.js
+- **Database:** MongoDB
+- **Authentication:** NextAuth
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Node.js installed on your machine
+- MongoDB set up for database management
