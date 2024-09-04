@@ -1,5 +1,5 @@
-import Footer from "@/components/shared/Footer";
-import Navbar from "@/components/shared/Navbar";
+import Footer from "@/components/standard/Footer";
+import Navbar from "@/components/standard/Navbar";
 import PageLayout from "@/components/shared/PageLayout";
 import React from "react";
 
@@ -11,8 +11,8 @@ const TermsOfService = () => {
 				<div>
 					<h1 className="text-3xl font-bold mb-4">Terms of Service</h1>
 					<p className="mb-2">
-						Welcome to DevSnack! These Terms of Service ("Terms") govern your
-						use of our website and services ("Services"). By accessing or using
+						Welcome to DevSnack! These Terms of Service {"Terms"} govern your
+						use of our website and services {"Services"}. By accessing or using
 						our Services, you agree to be bound by these Terms. If you do not
 						agree to these Terms, please do not use our Services.
 					</p>
@@ -119,7 +119,7 @@ const TermsOfService = () => {
 					<p className="mb-2">
 						We reserve the right, at our sole discretion, to modify or replace
 						these Terms at any time. If a revision is material, we will try to
-						provide at least 30 days' notice prior to any new terms taking
+						provide at least 30 days notice prior to any new terms taking
 						effect. What constitutes a material change will be determined at our
 						sole discretion.
 					</p>

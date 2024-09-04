@@ -1,8 +1,19 @@
+"use client";
+
+import { useState } from "react";
 import { Button } from "../ui/button";
+import {
+	Dialog,
+	DialogContent,
+	DialogTitle,
+	DialogTrigger,
+} from "../ui/dialog";
 import { Input } from "../ui/input";
 import HeaderCard from "./HeaderCard";
+import NewsletterForm from "./NewsletterForm";
 
 const GetStarted = () => {
+	const [email, setEmail] = useState<string>("");
 	return (
 		<section className=" bg-white/5 rounded-xl my-16">
 			<div className="flex gap-2 px-5 py-2">
@@ -24,8 +35,20 @@ const GetStarted = () => {
 				</div>
 
 				<div className="flex w-full">
-					<Input placeholder="Email" />
-					<Button>Subscribe</Button>
+					<Input
+						placeholder="Email"
+						value={email}
+						onChange={(e) => setEmail(e.target.value)}
+					/>
+					<Dialog>
+						<DialogTrigger asChild>
+							<Button>Subscribe</Button>
+						</DialogTrigger>
+						<DialogContent>
+							<DialogTitle>Subscribe to DevSnack</DialogTitle>
+							<NewsletterForm prefilledEmail={email} />
+						</DialogContent>
+					</Dialog>
 				</div>
 			</div>
 		</section>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, VT323 } from "next/font/google";
 import "./globals.css";
 import NextTopLoader from "nextjs-toploader";
+import { Toaster } from "sonner";
 
 const inter = VT323({ weight: "400", subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
 			<body className={inter.className}>
 				<NextTopLoader showSpinner={false} color="#18d619" />
 				{children}
+				<Toaster theme="dark" />
 			</body>
 		</html>
 	);

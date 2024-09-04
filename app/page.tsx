@@ -1,6 +1,6 @@
-import Footer from "@/components/shared/Footer";
-import GetStarted from "@/components/shared/GetStarted";
-import Navbar from "@/components/shared/Navbar";
+import Footer from "@/components/standard/Footer";
+import GetStarted from "@/components/standard/GetStarted";
+import Navbar from "@/components/standard/Navbar";
 import PageLayout from "@/components/shared/PageLayout";
 
 const Home = () => {
