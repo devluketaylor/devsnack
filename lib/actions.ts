@@ -1,8 +1,9 @@
 "use server";
 
 import connectToDatabase from "./database/connect";
+import AdminUserModel from "./database/models/admin-user";
 import NewsletterModel from "./database/models/newsletter";
-import { Newsletter } from "./types";
+import { AdminUser, Newsletter } from "./types";
 
 export const subscribeToNewsletter = async ({
 	email,
@@ -15,14 +16,26 @@ export const subscribeToNewsletter = async ({
 	// Save email to database
 
 	try {
-		await NewsletterModel.create({
-			email,
-			firstName: "luke",
-			lastName: "taylor",
+		const res = await NewsletterModel.create({
+			email: email,
+			firstName: firstName,
+			lastName: lastName,
 		});
-
-		console.log("worker");
 	} catch (error) {
 		console.log("🔴 Error saving email to database", error);
+	}
+};
+
+export const addAdminUser = async ({ name, email, password }: AdminUser) => {
+	await connectToDatabase();
+
+	try {
+		await AdminUserModel.create({
+			name,
+			email,
+			password,
+		});
+	} catch (error) {
+		console.log("🔴 Error saving admin user to database", error);
 	}
 };

@@ -42,9 +42,9 @@ const NewsletterForm = ({ prefilledEmail }: { prefilledEmail?: string }) => {
 		setIsLoading(true);
 
 		const res = await subscribeToNewsletter({
-			email: "",
-			firstName: "",
-			lastName: "",
+			email: data.email,
+			firstName: data.firstName,
+			lastName: data.lastName,
 		});
 
 		toast("Subscribed");

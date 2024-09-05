@@ -4,6 +4,12 @@ export type Newsletter = {
 	email: string;
 };
 
+export type AdminUser = {
+	name: string;
+	email: string;
+	password: string;
+};
+
 export type Post = {
 	author: string;
 	thumbnail: string;
