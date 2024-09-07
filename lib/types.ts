@@ -1,3 +1,9 @@
+export type Reply<T> = {
+	success: boolean;
+	message: string;
+	data?: T;
+};
+
 export type Newsletter = {
 	firstName: string;
 	lastName: string;

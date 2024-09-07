@@ -47,7 +47,11 @@ const NewsletterForm = ({ prefilledEmail }: { prefilledEmail?: string }) => {
 			lastName: data.lastName,
 		});
 
-		toast("Subscribed");
+		if (res?.success) {
+			toast.success(res.message);
+		} else {
+			toast.error(res?.message);
+		}
 
 		setIsLoading(false);
 	};

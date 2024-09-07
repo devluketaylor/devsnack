@@ -14,8 +14,7 @@ const Navbar = () => {
 			<Link href="/">
 				<p className="text-3xl">{">_ "}devsnack</p>
 			</Link>
-			<div className="flex gap-1">
-				<Button variant="ghost">Login</Button>
+			<div>
 				<Dialog>
 					<DialogTrigger asChild>
 						<Button>Subscribe</Button>

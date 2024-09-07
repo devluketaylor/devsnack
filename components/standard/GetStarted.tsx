@@ -21,7 +21,7 @@ const GetStarted = () => {
 				<div className="bg-yellow-500 rounded-full w-3 h-3" />
 				<div className="bg-green-500 rounded-full w-3 h-3" />
 			</div>
-			<div className="flex items-center gap-5 p-8 bg-white/5 rounded-b-xl rounded-t-sm">
+			<div className="flex flex-col md:flex-row items-center gap-5 p-8 bg-white/5 rounded-b-xl rounded-t-sm">
 				<div>
 					<HeaderCard>get started</HeaderCard>
 					<h1 className="text-2xl">
